@@ -1,4 +1,4 @@
-## 1.Backend (todo-backend)
+### 1.Backend (todo-backend)
 
 # Todo App Backend
 
@@ -24,11 +24,11 @@ This is the **Express.js + Prisma + MySQL** backend for the Todo List App.
   cd ToDoBackend
 
 
-## 2. Install Dependencies
+### 2. Install Dependencies
 
   npm install
 
-## 3. Setup Prisma and Database
+### 3. Setup Prisma and Database
 
   Ensure MySQL is installed and running
   
@@ -39,19 +39,19 @@ This is the **Express.js + Prisma + MySQL** backend for the Todo List App.
     DATABASE_URL="mysql://root:yourpassword@localhost:3306/todo"
   // Replace yourpassword with your own credentials
 
-## 4. Run Migrations
+### 4. Run Migrations
 
   npx prisma migrate dev --name init
   npx prisma generate
 
-## 5. Start the Server
+### 5. Start the Server
 
   npm run dev
 
 
 Server runs on: http://localhost:4000 or as per local setup port.
 
-## API Endpoints
+### API Endpoints
   Method	      Endpoint	          Description
   GET	          /tasks	          Get all  tasks
   POST	        /tasks	          Create a new task
@@ -59,7 +59,7 @@ Server runs on: http://localhost:4000 or as per local setup port.
   DELETE	      /tasks/:id	      Delete a task
 
 
-## Folder Structure
+### Folder Structure
 
   ToDoBackend/
   ├── prisma/
@@ -71,7 +71,7 @@ Server runs on: http://localhost:4000 or as per local setup port.
   └── tsconfig.json
 
 
-## Useful Commands
+### Useful Commands
 
   npx prisma studio        # View DB in browser
   npx prisma generate      # Re-generate client
