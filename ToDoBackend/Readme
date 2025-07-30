@@ -1,12 +1,12 @@
 ## 1.Backend (todo-backend)
 
-# 🛠️ Todo App Backend
+# Todo App Backend
 
 This is the **Express.js + Prisma + MySQL** backend for the Todo List App.
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 - Express.js
 - Prisma ORM
@@ -15,7 +15,7 @@ This is the **Express.js + Prisma + MySQL** backend for the Todo List App.
 
 ---
 
-## ⚙️ Setup Instructions (Windows Friendly)
+## Setup Instructions (Windows Friendly)
 
 ### 1. Clone the Repository
 
