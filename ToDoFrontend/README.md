@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### 2. Frontend (`ToDoFrontend`)
 
-## Getting Started
+```markdown
+# Todo App Frontend
 
-First, run the development server:
+This is the **Next.js 14 + Tailwind + Axios** frontend for the Todo List App.
+
+---
+
+## Tech Stack
+
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- Axios
+
+---
+
+## Setup Instructions
+
+### 1. Clone the Repository (If not done)
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  git https://github.com/Sairam-9999/ToDoList.git
+  cd ToDoFrontend
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Install Dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  npm install
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Start the Frontend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Folder Structure
 
-## Deploy on Vercel
+    ToDoStructure/
+    ├── app/
+    │   ├── page.tsx             # Home
+    │   ├── new/page.tsx         # Create task
+    │   └── edit/[id]/page.tsx   # Edit task
+    ├── components/
+    │   └── TaskForm.tsx
+    ├── styles/
+    │   └── globals.css
+    ├── tailwind.config.ts
+    ├── package.json
+    └── ...
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Features
+
+  Create / Edit / Delete tasks
+  Toggle task completion
+  Task color selection
+  Uses Axios to communicate with Express API
+
+
+### Backend API
+
+    Ensure backend is running on http://localhost:4000
+    Update API URLs in frontend if needed (e.g., in axios requests inside components)
+
+
+### Common Errors
+    CORS error? → Ensure backend uses: app.use(cors())
+    Network error? → Check backend is running on port 4000
+    404 on edit page? → Ensure [id] is a dynamic segment under edit/
+  
