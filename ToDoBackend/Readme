@@ -17,7 +17,7 @@ This is the **Express.js + Prisma + MySQL** backend for the Todo List App.
 
 ## Setup Instructions (Windows Friendly)
 
-### 1. Clone the Repository
+### 1. Clone the Repository (if not done)
 
 ```bash
   git clone https://github.com/Sairam-9999/ToDoList.git
